@@ -1,0 +1,209 @@
+@charset "utf-8";
+/* Sliders Technologies
+* --------------------------------------- */
+body{
+	background-image:url(http://www.inatek.com.mx/img/servicesBG.jpg);
+	background-size:100% 100%;
+}
+sub{
+	font-size:50%;
+}
+section figure img{
+	float:none;
+	-webkit-border-radius:15px;
+	-moz-border-radius:15px;
+	-ms-border-radius:15px;
+	-o-border-radius:15px;
+	border-radius:15px;
+}
+section p{
+	padding:10px 0px !important;
+}
+section p a{
+	text-decoration:underline;
+	text-align:center;
+	color:white;
+}
+section figcaption p{
+	margin-left:-10%;
+	text-align:justify;
+	width:120%;
+}
+section figcaption ul{
+	margin-left:10%;
+}
+section figcaption ul li{
+	color:white;
+	text-align:justify;
+	list-style-image:url(http://www.inatek.com.mx/gph/matte16.ico);
+}
+nav#indice{
+	background-color:white;
+	position:fixed;
+	z-index:9;
+	text-align:center;
+	font-family: century_gothic;
+}
+nav#indice li:hover a{
+	background-color:#165929;
+	color:white;
+	border-radius:10px;
+}
+
+/* PHONE
+---------------------------------------------- */
+@media screen and (min-width : 1px){
+nav#indice{
+	height:30px;
+	top:45px;
+}
+nav#indice li{
+	margin-top:5px;
+}
+section figcaption{
+	margin-top:55px;
+}
+section figure img{
+	display:none;
+}
+section figcaption h1{
+	font-size: 1.2em;
+}
+section figcaption p,
+section figcaption ul li{
+	font-size: 0.8em;
+}
+section figcaption ul{
+	margin-top:0px;
+}
+}
+
+/* PHONE LANDSCAPE
+---------------------------------------------- */
+@media screen and (min-width : 1px) and (orientation:landscape){
+	section figcaption ul{
+		-webkit-columns: 70px 3; /* Chrome, Safari, Opera */
+    	-moz-columns: 70px 3; /* Firefox */
+    	columns: 70px 3;
+	}
+}
+
+/* TABLETS
+---------------------------------------------- */
+@media screen and (min-width : 768px){
+nav#indice{
+	height:45px;
+	top:60px;
+}
+nav#indice li{
+	margin-top:7px;
+}
+section figcaption{
+	margin-top:-13px;
+}
+section figcaption p{
+	margin-left:0px;
+	text-align:justify;
+	width:100%;
+}
+section figure img{
+	display:block;
+	margin-top:6%;
+	margin-left:20%;
+	width:60%;
+}
+section:nth-child(2) figure img{
+	margin-left:35%;
+	width:30%;
+}
+section figcaption h1{
+	margin-top:3%;
+	font-size: 2em;
+}
+section figcaption p,
+section figcaption ul li{
+	font-size: 1.3em;
+}
+section figcaption ul{
+	margin-top:0px;
+}
+}
+
+/* TABLETS LANDSCAPE
+---------------------------------------------- */
+@media screen and (min-width : 768px) and (orientation:landscape){
+	section figcaption ul{
+		-webkit-columns: 120px 2; /* Chrome, Safari, Opera */
+    	-moz-columns: 120px 2; /* Firefox */
+    	columns: 120px 2;
+	}
+}
+
+/* LAPTOPS
+---------------------------------------------- */
+@media screen and (min-width : 1024px){
+nav#indice{
+	height:50px;
+	top:70px;
+}
+nav#indice li{
+	margin-top:5px;
+}
+section figcaption{
+	margin-top:-17px;
+}
+section figure p{
+	margin-left:10%;
+	width:80%;
+}
+section figure img{
+	margin-top:0px;
+	width:65%;
+}
+section:nth-child(2) figure img{
+	float:left;
+	margin:0px 20px 0px 0px;
+	width:25%;
+}
+section figcaption h1{
+	margin-top:3%;
+	font-size: 1.8em;
+}
+section figcaption p,
+section figcaption ul li{
+	font-size: 1.2em;
+}
+section figcaption ul{
+	margin-top:0px;
+}
+}
+
+/* LARGE SCREENS
+---------------------------------------------- */
+@media screen and (min-width : 1660px){
+nav#indice{
+	height:60px;
+	top:80px;
+}
+nav#indice li{
+	margin-top:10px;
+}
+section figcaption{
+	margin-top:-25px;
+}
+section figure img{
+	margin-top:3%;
+	width:45%;
+}
+section figcaption h1{
+	margin-top:2%;
+	font-size: 3em;
+}
+section figcaption p,
+section figcaption ul li{
+	font-size: 1.6em;
+}
+section figcaption ul{
+	margin-top:0px;
+}
+}

@@ -1,0 +1,251 @@
+@charset "utf-8";
+/* Sliders Technologies
+* --------------------------------------- */
+body{
+	background-image:url(http://www.inatek.com.mx/img/experienceBG.jpg);
+	background-size:100% 100%;
+}
+sub{
+	font-size:50%;
+}
+section figure img{
+	-webkit-border-radius:15px;
+	-moz-border-radius:15px;
+	-ms-border-radius:15px;
+	-o-border-radius:15px;
+	border-radius:15px;
+}
+section p{
+	padding:10px 0px !important;
+}
+section figcaption p{
+	margin-left:-10%;
+	text-align:justify;
+	width:120%;
+}
+section figcaption ul{
+	margin-left:10%;
+}
+section figcaption ul li{
+	color:white;
+	text-align:justify;
+	list-style-image:url(http://www.inatek.com.mx/gph/matte16.ico);
+}
+nav#indice{
+	background-color:white;
+	position:fixed;
+	z-index:9;
+	text-align:center;
+	font-family: century_gothic;
+}
+nav#indice li:hover a{
+	background-color:#165929;
+	color:white;
+	border-radius:10px;
+}
+iframe{
+	margin-top:5%;
+	 border-color:white;
+	 -webkit-border-radius: 20px;
+            border-radius: 20px;
+}
+section a{
+	color:white;
+	text-decoration:underline;
+	font-size:110%;
+}
+
+/* PHONE
+---------------------------------------------- */
+@media screen and (min-width : 1px){
+nav#indice{
+	height:30px;
+	top:45px;
+}
+nav#indice li{
+	margin-top:5px;
+}
+section figcaption{
+	margin-top:0px;
+}
+iframe{
+	height:auto;
+}
+section figcaption h1{
+	font-size: 1.2em;
+}
+section figcaption p,
+section figcaption ul li{
+	font-size: 0.75em;
+}
+section figcaption ul{
+	margin-top:0px;
+}
+}
+
+/* PHONE PORTRAIT
+---------------------------------------------- */
+@media screen and (min-width : 1px) and (orientation:portrait){
+	nav#indice li{
+		margin:0px;
+	}
+	section figure img, iframe{
+		margin-top:10%;
+		width:60%;
+	}
+}
+
+/* PHONE LANDSCAPE
+---------------------------------------------- */
+@media screen and (min-width : 1px) and (orientation:landscape){
+	section figure img{
+		display:none;
+	}
+	iframe{
+		margin-top:5%;
+		width:25%;
+		max-height:70px;
+	}
+}
+
+/* TABLETS
+---------------------------------------------- */
+@media screen and (min-width : 767px){
+nav#indice{
+	height:45px;
+	top:65px;
+}
+nav#indice li{
+	margin-top:7px;
+}
+section figcaption{
+	margin-top:-13px;
+}
+section figcaption p{
+	margin-left:0px;
+	text-align:justify;
+	width:100%;
+}
+section figure img, iframe{
+	margin-top:6%;
+	width:65%;
+}
+iframe{
+	height:200px;
+}
+section figcaption h1{
+	margin-top:3%;
+	font-size: 2em;
+}
+section figcaption p,
+section figcaption ul li{
+	font-size: 1.3em;
+}
+section figcaption ul{
+	margin-top:0px;
+}
+}
+
+/* TABLETS LANDSCAPE
+---------------------------------------------- */
+@media screen and (min-width : 768px) and (orientation:landscape){
+	section figcaption h1{
+		font-size: 1.5em;
+	}
+	section figcaption p{
+		font-size: 1.2em;
+	}
+	section figcaption ul{
+		margin-top:0px;
+	}
+	section figcaption ul li,
+	section figcaption ul li ul li{
+		font-size:1em;
+	}
+	section figure img{
+		display:block;
+		margin-top:6%;
+		margin-left:25%;
+		width:50%;
+	}
+	iframe{
+		height:200px;
+		max-height:200px;
+	}
+}
+
+/* LAPTOPS
+---------------------------------------------- */
+@media screen and (min-width : 1025px){
+nav#indice{
+	height:50px;
+	top:70px;
+}
+nav#indice li{
+	margin-top:5px;
+}
+nav#indice li a,
+nav#indice li.active a{
+	padding: 5px 7px;
+}
+section figcaption{
+	margin-top:-17px;
+}
+section figure p{
+	margin-left:10%;
+	width:80%;
+}
+section figure img{
+	margin-top:0px;
+	margin-left:33%;
+	width:35%;
+}
+iframe{
+	margin-top:0px;
+	margin-left:0px;
+	height:300px;
+	width:40%;
+	max-width:420px;
+}
+section figcaption h1{
+	margin-top:3%;
+	font-size: 1.8em;
+}
+section figcaption p,
+section figcaption ul li{
+	font-size: 1.2em;
+}
+section figcaption ul{
+	margin-top:0px;
+}
+}
+
+/* LARGE SCREENS
+---------------------------------------------- */
+@media screen and (min-width : 1660px){
+nav#indice{
+	height:60px;
+	top:80px;
+}
+nav#indice li{
+	margin-top:10px;
+}
+section figcaption{
+	margin-top:-25px;
+}
+section figure img, iframe{
+	margin-top:3%;
+	width:45%;
+}
+section figcaption h1{
+	margin-top:2%;
+	font-size: 3em;
+}
+section figcaption p,
+section figcaption ul li{
+	font-size: 1.6em;
+}
+section figcaption ul{
+	margin-top:0px;
+}
+}

@@ -1,0 +1,555 @@
+@charset "utf-8";
+/* INATEK - Media Queries */
+
+/* PHONE LANDSCAPE
+---------------------------------------------- */
+@media screen and (min-width : 1px) and (orientation:landscape) {
+/* HEADER & FOOTER */
+header{
+	top:0px;
+	height: 30px;
+}
+footer{
+	bottom:0px;
+	height: 8px;
+}
+footer p{
+	line-height:0px;
+	font-size:9px;
+	color:#165929;
+	font-weight:bold;
+	margin-top:-5px;
+}
+div#socialLinks{
+	 margin-top:-13px;
+}
+div#socialLinks img{
+	 width:24px;
+}
+
+/* NAV */
+nav li {
+	display:inline-block;
+	margin: 10px 3.125%;
+	color: #165929;
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+nav li a,
+nav li.active a{
+	padding: 5px 7px;
+	display:block;
+}
+nav li.active a{
+	color: #fff;
+}
+nav{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+	font-size:0.6em;
+}
+nav li a img{
+	height:35px;
+	margin-top:-7px;
+	width:auto;
+	content:url(http://www.inatek.com.mx/gph/inatekLogoSmall.png);
+}
+nav li#lista{
+	position:relative;
+	top:-13px;
+	margin-left:-10px;
+}
+nav li img#new-project{
+	position:absolute;
+	top:-5px;
+	left:-5px;
+	width:12px;
+}
+nav li img#nuevo-proyecto{
+	position:absolute;
+	top:0px;
+	left:53%;
+	width:12px;
+}
+
+/* BODY */
+section h1{
+	font-size: 1.5em;
+}
+section p{
+	font-size: 0.85em;
+}
+
+/* BUTTONS */
+main button[type=button]{
+	width:50%;
+	height:35px;
+	font-size:1em;
+}
+main button[type=button]:hover{
+	font-size:1.15em;
+}
+}
+
+/* PHONE PORTRAIT
+---------------------------------------------- */
+@media screen and (min-width : 1px) and (orientation:portrait) {
+/* HEADER & FOOTER */
+header{
+	top:0px;
+	height: 30px;
+}
+footer{
+	bottom:0px;
+	height: 8px;
+}
+footer p{
+	line-height:0px;
+	font-size:7px;
+	color:#165929;
+	font-weight:bold;
+	margin-top:-5px;
+}
+div#socialLinks{
+	 margin-top:-13px;
+}
+div#socialLinks img{
+	 width:24px;
+}
+
+/* NAV */
+nav li {
+	display:inline-block;
+	margin: 12px 2.8%;
+	color: #165929;
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+nav li a,
+nav li.active a{
+	padding: 5px 2px;
+	display:block;
+}
+nav li.active a{
+	color: #fff;
+}
+nav{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 50px;
+	z-index: 70;
+	width: 100%;
+	padding: 0px;
+	margin:0px;
+	font-size:0.55em;
+}
+nav li a img{
+	height:25px;
+	width:auto;
+	content:url(http://www.inatek.com.mx/gph/inatekLogoSmall.png);
+}
+nav li#lista{
+	position:relative;
+	top:-9px;
+	margin-left:-10px;
+}
+nav li img#new-project{
+	position:absolute;
+	top:-5px;
+	left:-5px;
+	width:12px;
+}
+nav li img#nuevo-proyecto{
+	position:absolute;
+	top:0px;
+	left:52%;
+	width:12px;
+}
+
+/* BODY */
+section h1{
+	font-size: 1.5em;
+	font-weight:bold;
+}
+section p,
+section ul li{
+	font-size: 1em;
+}
+section ul li{
+	width:95%;
+}
+/* BUTTONS */
+main button[type=button]{
+	width:80%;
+	height:35px;
+	font-size:0.85em;
+}
+main button[type=button]:hover{
+	font-size:1.15em;
+}
+}
+
+/* TABLETS PORTRAIT
+---------------------------------------------- */
+@media screen and (min-width : 768px) and (orientation:portrait) {
+/* HEADER & FOOTER */
+header{
+	top:0px;
+	height: 45px;
+}
+footer{
+	bottom:0px;
+	height: 15px;
+}
+footer p{
+	line-height:5px;
+	font-size:12px;
+}
+div#socialLinks{
+	 margin-top:-18px;
+}
+div#socialLinks img{
+	 width:32px;
+}
+
+/* NAV */
+nav li {
+	margin: 10px 1.5%;
+}
+nav li a,
+nav li.active a{
+	padding: 5px 10px;
+	display:block;
+}
+nav{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+	font-size:1.1em;
+}
+nav li a img{
+	height:50px;
+	margin-top:-8px;
+	width:auto;
+	content:url(http://www.inatek.com.mx/gph/inatekLogoMedium.png);
+}
+nav li#lista{
+	position:relative;
+	top:-15px;
+}
+nav li img#new-project{
+	position:absolute;
+	top:-10px;
+	left:-10px;
+	width:22px;
+}
+nav li img#nuevo-proyecto{
+	position:absolute;
+	top:0px;
+	left:51%;
+	width:22px;
+}
+
+/* BODY */
+section h1{
+	font-size: 3.5em;
+}
+section p,
+section ul li{
+	font-size: 1.25em;
+}
+section ul li{
+	width:90%;
+}
+/* BUTTONS */
+main button[type=button]{
+	width:40%;
+	height:50px;
+	font-size:1.2em;
+}
+main button[type=button]:hover{
+	font-size:1.5em;
+}
+}
+
+/* TABLETS LANDSCAPE
+---------------------------------------------- */
+@media screen and (min-width : 768px) and (orientation:landscape) {
+/* HEADER & FOOTER */
+header{
+	top:0px;
+	height: 45px;
+}
+footer{
+	bottom:0px;
+	height: 15px;
+}
+footer p{
+	line-height:5px;
+	font-size:12px;
+}
+div#socialLinks{
+	 margin-top:-18px;
+}
+div#socialLinks img{
+	 width:32px;
+}
+
+/* NAV */
+nav li {
+	margin: 10px 2%;
+}
+nav li a,
+nav li.active a{
+	padding: 5px 15px;
+	display:block;
+}
+nav{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+	font-size:1.3em;
+}
+nav li a img{
+	height:50px;
+	margin-top:-8px;
+	width:auto;
+	content:url(http://www.inatek.com.mx/gph/inatekLogoMedium.png);
+}
+nav li#lista{
+	position:relative;
+	top:-15px;
+}
+nav li img#new-project{
+	position:absolute;
+	top:-10px;
+	left:-10px;
+	width:22px;
+}
+nav li img#nuevo-proyecto{
+	position:absolute;
+	top:0px;
+	left:52%;
+	width:22px;
+}
+
+/* BODY */
+section h1{
+	font-size: 3.5em;
+}
+section p,
+section ul li{
+	font-size: 1.25em;
+}
+section ul li{
+	width:90%;
+}
+/* BUTTONS */
+main button[type=button]{
+	width:35%;
+	height:50px;
+	font-size:1.2em;
+}
+main button[type=button]:hover{
+	font-size:1.5em;
+}
+}
+
+/* LAPTOPS
+---------------------------------------------- */
+@media screen and (min-width : 1024px) and (min-device-height : 770px){
+/* HEADER & FOOTER */
+header{
+	top:0px;
+	height: 55px;
+}
+footer{
+	bottom:0px;
+	height: 17px;
+}
+footer p{
+	line-height:0px;
+	font-size:12px;
+	color:#165929;
+}
+div#socialLinks{
+	 margin-top:-13px;
+}
+
+/* NAV */
+nav li {
+	display:inline-block;
+	margin: 10px 1%;
+	color: #165929;
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+nav li a,
+nav li.active a{
+	padding: 9px 20px;
+	display:block;
+}
+nav li.active a{
+	color: #fff;
+}
+nav{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+	font-size:1.2em;
+}
+nav li a img{
+	height:60px;
+	margin-top:-10px;
+	width:auto;
+	content:url(http://www.inatek.com.mx/gph/inatekLogoLarge.png);
+}
+nav li#lista{
+	position:relative;
+	top:-23px;
+}
+nav li img#new-project{
+	position:absolute;
+	top:-10px;
+	left:-10px;
+	width:30px;
+}
+nav li img#nuevo-proyecto{
+	position:absolute;
+	top:0px;
+	left:51%;
+	width:30px;
+}
+
+/* BODY */
+section h1{
+	font-size: 4em;
+}
+section p,
+section ul li{
+	font-size: 1.5em;
+}
+section ul li{
+	width:85%;
+}
+
+/* BUTTONS */
+main button[type=button]{
+	width:30%;
+	height:45px;
+	font-size:1.3em;
+}
+main button[type=button]:hover{
+	font-size:1.5em;
+}
+}
+
+/* LARGE SCREENS
+---------------------------------------------- */
+@media screen and (min-width : 1660px){
+/* HEADER & FOOTER */
+header{
+	top:0px;
+	height: 70px;
+}
+footer{
+	bottom:0px;
+	height: 20px;
+}
+footer p{
+	line-height:5px;
+	font-size:12px;
+	color:#165929;
+}
+
+/* NAV */
+nav li {
+	display:inline-block;
+	margin: 12px 4%;
+	color: #165929;
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+nav li a,
+nav li.active a{
+	padding: 9px 30px;
+	display:block;
+}
+nav li.active a{
+	color: #fff;
+}
+nav{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+	font-size:1.2em;
+}
+nav li a img{
+	margin-top:-10px;
+	height:70px;
+	width:auto;
+	content:url(http://www.inatek.com.mx/gph/inatekLogoLarge.png);
+}
+nav li#lista{
+	position:relative;
+	top:-30px;
+}
+nav li img#new-project{
+	position:absolute;
+	top:-15px;
+	left:-15px;
+	width:40px;
+}
+nav li img#nuevo-proyecto{
+	position:absolute;
+	top:-5px;
+	left:53%;
+	width:40px;
+}
+
+/* BODY */
+section h1{
+	font-size: 6em;
+}
+section p,
+section ul li{
+	font-size: 2em;
+}
+
+/* BUTTONS */
+main button[type=button]{
+	width:30%;
+	height:60px;
+	font-size:1.7em;
+}
+main button[type=button]:hover{
+	font-size:2em;
+}
+}

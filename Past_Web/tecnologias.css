@@ -1,0 +1,307 @@
+@charset "utf-8";
+/* Technologies
+* --------------------------------------- */
+body{
+	background-image:url(http://www.inatek.com.mx/img/technologiesBG.jpg);
+	background-size:100% 100%;
+}
+sub{
+	font-size:50%;
+}
+section figure img{
+	-webkit-border-radius:15px;
+	-moz-border-radius:15px;
+	-ms-border-radius:15px;
+	-o-border-radius:15px;
+	border-radius:15px;
+}
+section p{
+	padding:10px 0px !important;
+}
+section#section0 figure div{
+	margin-top:-55px;
+	padding-left:10%;
+}
+section figure img{
+	float:none;
+}
+section figcaption p{
+	margin-left:-10%;
+	text-align:justify;
+	width:120%;
+}
+section figcaption ul{
+	margin-left:10%;
+	float:left;
+	margin-right:8%;
+}
+section figcaption img{
+	float:none;
+}
+section figcaption ul li{
+	color:white;
+	text-align:justify;
+	list-style-image:url(http://www.inatek.com.mx/gph/matte16.ico);
+}
+nav#indice{
+	background-color:white;
+	position:fixed;
+	z-index:9;
+	text-align:center;
+	font-family: century_gothic;
+}
+nav#indice li:hover a{
+	background-color:#165929;
+	color:white;
+	border-radius:10px;
+}
+
+/* PHONE
+---------------------------------------------- */
+@media screen and (min-width : 1px){
+nav#indice{
+	height:30px;
+	top:45px;
+}
+nav#indice li{
+	margin-top:5px;
+}
+section figcaption{
+	margin-top:0px;
+}
+section figcaption h1{
+	font-size: 1.2em;
+}
+section figcaption p,
+section figcaption ul li{
+	font-size: 0.75em;
+}
+section figcaption ul{
+	margin-top:0px;
+}
+section figcaption img{
+	display:none;
+}
+}
+
+/* PHONE PORTRAIT
+---------------------------------------------- */
+@media screen and (min-width : 1px) and (orientation:portrait){
+    section figure img{
+	   margin-top:10%;
+	   width:50% !important;
+    }
+	#tecnosolidosSlider{
+		margin-top:30px;
+		margin-left:-5%;
+	}
+    #tecnosolidosSlider img{
+	   width:80% !important;
+    }
+}
+
+/* PHONE LANDSCAPE
+---------------------------------------------- */
+@media screen and (min-width : 1px) and (orientation:landscape){
+	section:nth-child(1) figure img{
+		margin-top:2%;
+		width:15% !important;
+	}
+    section figure img{
+	   margin-top:2%;
+	   width:20% !important;
+    }
+    #tecnosolidosSlider img{
+	   width:30% !important;
+    }
+	section figcaption ul{
+		-webkit-columns: 100px 2; /* Chrome, Safari, Opera */
+    	-moz-columns: 100px 2; /* Firefox */
+    	columns: 100px 2;
+	}
+}
+
+/* TABLETS
+---------------------------------------------- */
+@media screen and (min-width : 768px){
+nav#indice{
+	height:45px;
+	top:60px;
+}
+nav#indice li{
+	margin-top:7px;
+}
+section figcaption{
+	margin-top:-13px;
+}
+section figcaption p{
+	margin-left:0px;
+	text-align:justify;
+	width:100%;
+}
+section figcaption h1{
+	margin-top:3%;
+	font-size: 2em;
+}
+section figcaption p,
+section figcaption ul li{
+	font-size: 1.3em;
+}
+section figcaption ul{
+	margin-top:0px;
+}
+}
+
+/* TABLETS PORTRAIT
+---------------------------------------------- */
+@media screen and (min-width : 768px) and (orientation:portrait){
+	section figure img{
+		margin-top:6%;
+		width:45% !important;
+	}
+	#tecnosolidosSlider{
+		margin-left:3%;
+	}
+	#tecnosolidosSlider img{
+		width:65% !important;
+	}
+	section figcaption img{
+		width:25% !important;
+		margin-top:-40px;
+		display:block;
+	}
+	section figcaption ul{
+		-webkit-columns: 350px 1; /* Chrome, Safari, Opera */
+    	-moz-columns: 350px 1; /* Firefox */
+    	columns: 350px 1;
+	}
+}
+
+/* TABLETS LANDSCAPE
+---------------------------------------------- */
+@media screen and (min-width : 768px) and (orientation:landscape){
+	section figcaption h1{
+		margin-top:3%;
+		font-size: 1.5em;
+	}
+	section figcaption p{
+		font-size: 1.2em;
+	}
+	section figcaption ul{
+		margin-top:0px;
+	}
+	section figcaption ul li{
+		font-size:1em;
+	}
+	section:nth-child(1) figure img{
+		margin-top:2%;
+		width:20% !important;
+	}
+	section figure img{
+		margin-top:6%;
+		width:35% !important;
+	}
+	#tecnosolidosSlider{
+		margin-top:35px;
+	}
+	#tecnosolidosSlider img{
+		width:55% !important;
+	}
+	section figcaption img{
+		width:20% !important;
+		margin-top:-40px;
+		display:block;
+	}
+	section figcaption ul{
+		-webkit-columns: 350px 1; /* Chrome, Safari, Opera */
+    	-moz-columns: 350px 1; /* Firefox */
+    	columns: 350px 1;
+	}
+}
+
+/* LAPTOPS
+---------------------------------------------- */
+@media screen and (min-width : 1030px){
+nav#indice{
+	height:50px;
+	top:70px;
+}
+nav#indice li{
+	margin-top:5px;
+}
+section figure img{
+	float:left;
+}
+section figcaption{
+	margin-top:-17px;
+}
+section figure img{
+	margin:0px 10px 10px 0px;
+	width:25% !important;
+}
+section figcaption{
+	padding-left:5%;
+	width:90%;
+}
+#tecnosolidosSlider{
+	margin-top:40px;
+}
+#tecnosolidosSlider img{
+	width:45% !important;
+}
+section figcaption img{
+	width:20% !important;
+	margin-top:-45px;
+}
+section figcaption h1{
+	margin-top:3%;
+	font-size: 1.8em;
+}
+section figcaption p,
+section figcaption ul li{
+	font-size: 1.1em;
+}
+section figcaption ul{
+	margin-top:0px;
+	-webkit-columns: 500px 1; /* Chrome, Safari, Opera */
+	-moz-columns: 500px 1; /* Firefox */
+	columns: 500px 1;
+}
+}
+
+/* LARGE SCREENS
+---------------------------------------------- */
+@media screen and (min-width : 1660px){
+nav#indice{
+	height:60px;
+	top:80px;
+}
+nav#indice li{
+	margin-top:10px;
+}
+section figcaption{
+	margin-top:-20px;
+}
+section figure img{
+	margin-top:5%;
+	width:20% !important;
+}
+#tecnosolidosSlider img{
+	width:45% !important;
+}
+section figcaption img{
+	width:15% !important;
+	margin-top:-40px;
+}
+section figcaption h1{
+	margin-top:2%;
+	font-size: 3em;
+}
+section figcaption p,
+section figcaption ul li{
+	font-size: 1.6em;
+}
+section figcaption ul{
+	margin-top:0px;
+}
+}
