@@ -1,0 +1,74 @@
+// Fonts
+//
+// Custom Fonts.
+@font-face{
+    font-family: century;
+    src: url('../gph/century.ttf');
+}
+
+*{
+    font-family: century;
+}
+
+
+// Variables
+//
+// Custom vars.
+$height: 90vh;
+$width: 100vw;
+$ina-space: 0.618rem;
+$section-space: 3rem;
+
+
+// Layout
+//
+// General spaces.
+section:not(.hero){
+    padding: $section-space 0px;
+}
+
+
+// Navbar
+//
+// Main navbar.
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px 0 #000000;
+    border-bottom: black 1px;
+}
+
+.navbar .navbar-nav .nav-item.active .nav-link{
+    color: $white;
+    background-color: #2c5828;
+    border-radius: .25rem;
+}
+
+
+// Footer
+//
+// Main footer.
+footer{
+    background: $inatek-green-dark;
+    color: white;
+    padding: $ina-space 0px;
+}
+
+
+// Hero
+//
+// Cover sections.
+section.hero{
+    height: $height;
+    max-width: $width;
+    position: relative;
+    color: white;
+    
+    a{
+        color: white;
+        text-decoration: none;
+        
+        &:hover{
+            color: $inatek-blue-dark;
+        }
+    }
+}
