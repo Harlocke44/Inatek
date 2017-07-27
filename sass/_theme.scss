@@ -6,20 +6,21 @@
     src: url('../gph/century.ttf');
 }
 
-*{
+h1,h2,h3,h4,h5,h6,p,li{
     font-family: century;
 }
+
 
 
 // Variables
 //
 // Custom vars.
-$height: 90vh;
+$height: 95vh;
 $width: 100vw;
 $swiper-width: 50vw;
 $swiper-height: 30vh;
 $ina-space: 0.618rem;
-$section-space: 3rem;
+$section-space: 5rem;
 
 
 // Layout
@@ -28,8 +29,8 @@ $section-space: 3rem;
 section:not(.hero){
     padding: $section-space 0px;
 }
-.space10vh{
-    height: 10vh;
+.space15vh{
+    height: 15vh;
 }
 
 
@@ -38,7 +39,7 @@ section:not(.hero){
 // Main navbar.
 .navbar {
     background-color: #ffffff;
-    box-shadow: 0 3px 10px 0 #000000;
+    @include ina-shadow(0, black);
     border-bottom: black 1px;
 }
 
@@ -55,7 +56,29 @@ section:not(.hero){
 footer{
     background: $inatek-green-dark;
     color: white;
-    padding: $ina-space 0px;
+    padding: 1rem 0px;
+    
+    i{
+        color: white;
+        padding: 0px $ina-space;
+        
+        &:hover{
+            color: $inatek-green;
+        }
+    }
+    
+    #developer{
+        font-size: $ina-space;
+        
+        a{
+            color: white;
+            text-decoration: underline;
+            
+            &:hover{
+                color: $inatek-green;
+            }
+        }
+    }
 }
 
 
@@ -79,9 +102,12 @@ section.hero{
     div.swiper-container{
         width: $swiper-width;
         height: $swiper-height;
+        background: rgba(255,255,255,0.6);
+        padding: $ina-space;
+        box-shadow: 0px 3px 5px 1px #000000;
+        border-radius: $ina-space;
         
-        img,
-        img.swiper-lazy{
+        img{
             height: 100%;
             width: auto;
         }

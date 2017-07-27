@@ -9,3 +9,7 @@
 @mixin transition($time){
     transition: all $time ease-out;
 }
+
+@mixin ina-shadow($horizontal, $color){
+    box-shadow: $horizontal 3px 10px 0 $color;
+}

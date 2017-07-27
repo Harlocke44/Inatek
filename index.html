@@ -47,6 +47,7 @@
     <link rel="stylesheet" href="assets/tether/css/tether.min.css">
     <link rel="stylesheet" href="assets/animate.css/animate.min.css">
     <link rel="stylesheet" href="assets/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
@@ -58,8 +59,8 @@
     <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="#">
-        <img src="gph/InatekLogo-01.svg" class="hidden-sm-down" alt="" height="65">
-        <img src="gph/inatek-isotipo.png" class="hidden-md-up" alt="" height="40">
+        <img src="gph/InatekLogo-01.svg" class="hidden-sm-down" alt="inatek-logo" height="65">
+        <img src="gph/inatek-isotipo.png" class="hidden-md-up" alt="inatek-logo" height="40">
     </a>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
@@ -70,7 +71,7 @@
                 <a class="nav-link" href="#">Servicios</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Nosotros</a>
+                <a class="nav-link" href="#">Productos</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Contacto</a>
@@ -95,59 +96,49 @@
                 <div class="swiper-container wow fadeInUp">
                     <div class="swiper-wrapper">
                         
-                        <!-- 3 columns -->
-                        <div class="swiper-slide">
-                            
-                            <div class="row">
-                                <div class="col-4">
-                                    <img src="gph/Tecnosolido_Logo-01.svg" alt="" class="img-fluid swiper-lazy">
-                            <div class="swiper-lazy-preloader"></div>
-                                </div>
-                                <div class="col-4">
-                                    <img src="gph/Tecnosolido_Logo-01.svg" alt="" class="img-fluid swiper-lazy">
-                            <div class="swiper-lazy-preloader"></div>
-                                </div>
-                                <div class="col-4">
-                                    <img src="gph/Tecnosolido_Logo-01.svg" alt="" class="img-fluid swiper-lazy">
-                            <div class="swiper-lazy-preloader"></div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        
                         <!-- Tecnosólido -->
                         <div class="swiper-slide">
-                            <img src="gph/Tecnosolido_Logo-01.svg" alt="" class="img-fluid swiper-lazy">
+                            <a href="#">
+                                <img src="gph/Tecnosolido_Logo-01.svg" class="img-fluid swiper-lazy" alt="tecnosolido-logo" >
+                            </a>
                             <div class="swiper-lazy-preloader"></div>
                         </div>
                         
-                        <!-- Tecnosólido -->
+                        <!-- Inablock -->
                         <div class="swiper-slide">
-                            <img src="gph/Tecnosolido_Logo-01.svg" alt="" class="img-fluid swiper-lazy">
+                            <a href="#">
+                                <img src="gph/inablock.svg" class="img-fluid swiper-lazy" alt="inablock-logo">
+                            </a>
                             <div class="swiper-lazy-preloader"></div>
                         </div>
                         
-                        <!-- Tecnosólido -->
+                        <!-- Biotek -->
                         <div class="swiper-slide">
-                            <img src="gph/Tecnosolido_Logo-01.svg" alt="" class="img-fluid swiper-lazy">
+                            <a href="#">
+                                <img src="gph/biotek.svg" class="img-fluid swiper-lazy" alt="biotek-logo">
+                            </a>
                             <div class="swiper-lazy-preloader"></div>
                         </div>
                         
-                        <!-- Tecnosólido -->
+                        <!-- Inapura -->
                         <div class="swiper-slide">
-                            <img src="gph/Tecnosolido_Logo-01.svg" alt="" class="img-fluid swiper-lazy">
+                            <a href="#">
+                                <img src="gph/inapura.svg" class="img-fluid swiper-lazy" alt="inapura-logo">
+                            </a>
                             <div class="swiper-lazy-preloader"></div>
                         </div>
                         
-                        <!-- Tecnosólido -->
-                        <div class="swiper-slide">
-                            <img src="gph/Tecnosolido_Logo-01.svg" alt="" class="img-fluid swiper-lazy">
+                        <!-- Tecnobaldosa -->
+                        <!--<div class="swiper-slide">
+                            <img src="gph/tecnobaldosa.svg" alt="tecnobaldosa-logo" class="img-fluid swiper-lazy">
                             <div class="swiper-lazy-preloader"></div>
-                        </div>
+                        </div>-->
                         
-                        <!-- Tecnosólido -->
+                        <!-- Petropura -->
                         <div class="swiper-slide">
-                            <img src="gph/Tecnosolido_Logo-01.svg" alt="" class="img-fluid swiper-lazy">
+                            <a href="#">
+                                <img src="gph/petropura.svg" class="img-fluid swiper-lazy" alt="petropura-logo">
+                            </a>
                             <div class="swiper-lazy-preloader"></div>
                         </div>
                         
@@ -160,12 +151,9 @@
             </div>
         </div>   
         
-        <div class="space10vh"></div>
+        <div class="space15vh hidden-sm-down"></div>
           
     </div>
-    
-    
-    
 </section>
   
   
@@ -174,19 +162,24 @@
 <section id="services">
     <div class="container">
         <div class="row">
-            <div class="col-10 offset-1 col-md-4 offset-md-0 wow fadeInLeft">
+            <div class="col-6 offset-0 col-md-3 offset-md-0 wow fadeInLeft">
                 <a href="#">
-                    <img src="gph/Tec-01.png" alt="tecnologias-inatek" class="img-fluid">
+                    <img src="gph/Tec-01.png" alt="tecnologias-inatek" class="img-fluid hvr-bob" style="margin-bottom: 50px;">
                 </a>
             </div>
-            <div class="col-10 offset-1 col-md-4 offset-md-0 wow fadeInUp">
+            <div class="col-6 offset-0 col-md-3 offset-md-0 wow fadeInUp">
                 <a href="#">
-                    <img src="gph/Serv-01.png" alt="servicios-inatek" class="img-fluid">
+                    <img src="gph/Productos-01.png" alt="servicios-inatek" class="img-fluid hvr-bob" style="margin-bottom: 50px;">
                 </a>
             </div>
-            <div class="col-10 offset-1 col-md-4 offset-md-0 wow fadeInRight">
+            <div class="col-6 offset-0 col-md-3 offset-md-0 wow fadeInUp">
                 <a href="#">
-                    <img src="gph/Nosotros-01.png" alt="nosotrs-inatek" class="img-fluid">
+                    <img src="gph/Serv-01.png" alt="nosotrs-inatek" class="img-fluid hvr-bob">
+                </a>
+            </div>
+            <div class="col-6 offset-0 col-md-3 offset-md-0 wow fadeInRight">
+                <a href="#">
+                    <img src="gph/Nosotros-01.png" alt="servicios-inatek" class="img-fluid hvr-bob">
                 </a>
             </div>
         </div>
@@ -204,15 +197,19 @@
             </div>
             <div class="col-4 text-right">
                 <a href="https://www.facebook.com/Inatek-497193530321422/">
-                    <span class="socicon-facebook"></span>
+                    <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
                 </a>
                 <a href="https://twitter.com/INATEKrsu">
-                    <span class="socicon-twitter"></span>
+                    <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
                 </a>
                 <a href="https://www.youtube.com/channel/UCdAwbhqMP6xkhMPd6d_lOhg">
-                    <span class="socicon-youtube"></span>
+                    <i class="fa fa-youtube fa-lg" aria-hidden="true"></i>
                 </a>
             </div>
+        </div>
+        
+        <div class="row justify-content-center" id="developer">
+            <p class="text-center">Desarrollado por <a href="http://www.cintegran.com.mx">GEM Cintegran</a></p>
         </div>
     </div>
 </footer>
