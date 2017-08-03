@@ -10,6 +10,10 @@ h1,h2,h3,h4,h5,h6,p,li{
     font-family: century;
 }
 
+h1,h2,h3,h4,h5,h6{
+    color: $inatek-green-dark;
+}
+
 
 
 // Variables
@@ -20,7 +24,7 @@ $width: 100vw;
 $swiper-width: 50vw;
 $swiper-height: 30vh;
 $ina-space: 0.618rem;
-$section-space: 5rem;
+$section-space: 3rem;
 
 
 // Layout
@@ -31,6 +35,17 @@ section:not(.hero){
 }
 .space15vh{
     height: 15vh;
+}
+.ina-title{
+    padding: 0px 0px $ina-space 0px;
+}
+.green-text{
+    color: $inatek-green-dark;
+}
+.ina-box{
+    padding: 2rem;
+    box-shadow: -3px 3px 5px 0 #000000;
+    border-radius: 10px;
 }
 
 
@@ -137,5 +152,42 @@ section#technologies{
     
     img.ina-gif{
         height: 200px;
+    }
+}
+
+
+// About
+//
+// Inatek company info.
+section#ciel,
+section#cleantech{
+    .ina-box{
+        #ciel-logo{
+            width: 80%;
+            margin-left: 10%;
+            margin-top: -5rem;
+        }
+        #cleantech-logo{
+            width: 60%;
+            margin-left: 20%;
+            margin-top: -6rem;
+        }
+    }
+}
+
+section#contact{
+    background: #AFC9DE;
+    
+    iframe{
+        box-shadow: -3px 3px 5px 0 #000000;
+        border-radius: 10px;
+    }
+    
+    a{
+        color: $inatek-blue;
+        
+        &:hover{
+            color: $inatek-blue-dark;
+        }
     }
 }
