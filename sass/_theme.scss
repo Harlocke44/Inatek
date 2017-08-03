@@ -113,3 +113,29 @@ section.hero{
         }
     }
 }
+
+
+// Technologies
+//
+// Inatek technologies.
+section#technologies{
+    background-image: url(../Imgs/Fondo.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    color: white;
+    
+    iframe{
+        border-radius: 10px;
+    }
+    
+    div.space2rem{
+        height: 4rem;
+    }
+    
+    img.ina-gif{
+        height: 200px;
+    }
+}
