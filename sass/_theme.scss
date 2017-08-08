@@ -6,7 +6,7 @@
     src: url('../gph/century.ttf');
 }
 
-h1,h2,h3,h4,h5,h6,p,li{
+h1,h2,h3,h4,h5,h6,p,li,label,input,textarea,button{
     font-family: century;
 }
 
@@ -46,6 +46,9 @@ section:not(.hero){
     padding: 2rem;
     box-shadow: -3px 3px 5px 0 #000000;
     border-radius: 10px;
+}
+input:focus, textarea:focus{
+    box-shadow: 2px 2px 3px 0 $inatek-green-dark;
 }
 
 
@@ -105,6 +108,10 @@ section.hero{
     max-width: $width;
     color: white;
     
+    h1,h2,h3,h4,h5,h6{
+        color: white;
+    }
+    
     a{
         color: white;
         text-decoration: none;
@@ -141,6 +148,10 @@ section#technologies{
     background-size: cover;
     
     color: white;
+    
+    h1,h2,h3,h4,h5,h6{
+        color: white;
+    }
     
     iframe{
         border-radius: 10px;

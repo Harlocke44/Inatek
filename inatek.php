@@ -1,3 +1,4 @@
+<?php $form_path='assets/formoid/form.php'; require_once $form_path; ?>
 <!DOCTYPE html>
 <!--**********************************************************************
 * FILENAME :        INATEK | About             
@@ -71,8 +72,8 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">Productos</a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="inatek.html">Contacto <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="inatek.html">Contacto</a>
             </li>
         </ul>
     </div>
@@ -194,18 +195,27 @@
     <div class="container">
         <div class="row">
             <div class="col-md-7">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.4577469651445!2d-99.621172!3d19.2624502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd8bcdb8c8cfd9%3A0x1567b3834ebe7508!2sInatek!5e0!3m2!1sen!2smx!4v1501798430712" width="100%" height="430" frameborder="0" style="border:0;" allowfullscreen class="wow fadeInLeft"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.4577469651445!2d-99.621172!3d19.2624502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd8bcdb8c8cfd9%3A0x1567b3834ebe7508!2sInatek!5e0!3m2!1sen!2smx!4v1501798430712" width="90%" height="400" frameborder="0" style="border:0" allowfullscreen class="wow fadeInLeft"></iframe>
             </div>
             <div class="col-md-5">
-                <h3 class="wow fadeInUp">Formulario de Contacto</h3>
-                <br>
+                <h5 class="wow fadeInUp">Datos de Contacto</h5>
+                <p class="wow fadeInUp">
+                    Av. Benito Juárez Norte 907 Int. 102 <br>
+                    Col. La Purísima, CP: 52169, Metepec, Méx. <br>
+                    Tel: <a href="tel:01-722-212-2223">01 (722) 212-2223</a> <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="tel:01-722-235-1201">2-35-12-01</a> <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="tel:01-722-219-5959">2-19-59-59</a> <br>
+                    <a href="mailto:contacto@inatek.com.mx">contacto@inatek.com.mx</a>
+                </p>
+                
+                <h5 class="wow fadeInUp">Formulario de Contacto</h5>
                 <form method="post" class="formoid-solid-blue">
                     
                     <!-- Name -->
                     <div class="form-group row">
                         <label for="nombre" class="col-2 col-form-label">Nombre<sup>*</sup></label>
                         <div class="col-9 offset-1">
-                            <input class="form-control" type="text" name="input" required="required" placeholder="Nombre">
+                            <input class="form-control form-control-sm" type="text" name="input" required="required" placeholder="Nombre">
                         </div>
                     </div>
                     
@@ -213,7 +223,7 @@
                     <div class="form-group row">
                         <label for="correo" class="col-2 col-form-label">Correo<sup>*</sup></label>
                         <div class="col-9 offset-1">
-                            <input class="form-control" type="email" name="email" required="required" placeholder="Correo">
+                            <input class="form-control form-control-sm" type="email" name="email" required="required" placeholder="Correo">
                         </div>
                     </div>
                     
@@ -221,7 +231,7 @@
                     <div class="form-group row">
                         <label for="telefono" class="col-2 col-form-label">Teléfono</label>
                         <div class="col-9 offset-1">
-                            <input class="form-control" type="tel" pattern="[+]?[\.\s\-\(\)\*\#0-9]{3,}" maxlength="24" name="phone" placeholder="Teléfono">
+                            <input class="form-control form-control-sm" type="tel" pattern="[+]?[\.\s\-\(\)\*\#0-9]{3,}" maxlength="24" name="phone" placeholder="Teléfono">
                         </div>
                     </div>
                     
@@ -231,29 +241,13 @@
                         <textarea class="form-control" name="textarea" cols="20" rows="5" required="required" placeholder="Déjanos un mensaje."></textarea>
                     </div>
                     
-                    <div class="d-flex justify-content-center">
-                        <button class="btn btn-primary" type="submit" role="button" value="Enviar">Enviar</button>
-                    </div>
+                    <!--<button class="btn btn-primary" role="button">
+                        <input type="submit" value="Enviar">
+                    </button>-->
+                    
+                    <button class="btn btn-primary" type="submit" role="button" value="Enviar">Enviar</button>
                     
                 </form>
-            </div>
-        </div>
-        
-        <br>
-        
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="ina-box" style="background: white;">
-                    <h5 class="wow fadeInUp text-center">Datos de Contacto</h5>
-                    <p class="wow fadeInUp text-center">
-                        Av. Benito Juárez Norte 907 Int. 102 <br>
-                        Col. La Purísima, CP: 52169, Metepec, Méx. <br>
-                        Tel: <a href="tel:01-722-212-2223">01 (722) 212-2223</a> <br>
-                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="tel:01-722-235-1201">2-35-12-01</a> <br>
-                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="tel:01-722-219-5959">2-19-59-59</a> <br>
-                        <a href="mailto:contacto@inatek.com.mx">contacto@inatek.com.mx</a>
-                    </p>
-                </div>
             </div>
         </div>
     </div>
