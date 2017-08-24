@@ -47,6 +47,10 @@ section:not(.hero){
     box-shadow: -3px 3px 5px 0 #000000;
     border-radius: 10px;
 }
+.ina-gray-box{
+    @extend .ina-box;
+    background: #F6F6F6;
+}
 input:focus, textarea:focus{
     box-shadow: 2px 2px 3px 0 $inatek-green-dark;
 }
@@ -186,6 +190,10 @@ section#cleantech{
     }
 }
 
+
+// Contact
+//
+// Contact Form.
 section#contact{
     background: #AFC9DE;
     
@@ -201,4 +209,50 @@ section#contact{
             color: $inatek-blue-dark;
         }
     }
+}
+
+
+// Buttons
+//
+// Modal windows of products.
+section#buttons{
+    img:hover{
+        cursor:pointer;
+    }
+    
+    div.modal-left-bg{
+        width: 50%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        position: relative;
+        float: right;
+    }
+    div.modal-right-bg{
+        width: 50%;
+        height: 100%;
+        right: 0px !important;
+        top: 0px;
+        position: relative;
+    }
+    div#inaquin-modal-1{
+        background: url(../Imgs/modales/Inablock1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+    div#inaquin-modal-2{
+        background: url(../Imgs/modales/Inablock2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+}
+
+
+// Projects
+//
+// Project development.
+section#projects{
+    background: #597A3D;
 }
