@@ -227,49 +227,8 @@ section#buttons{
     img.hvr-grow:hover{
         cursor:pointer;
     }
-    
-    iframe{
-        width: 100%;
-        height: 100%;
-    }
 }
-section.modal-iframe{
-    
-    img.fixed-top,
-    img.fixed-bottom{
-        z-index: 2;
-    }
-    
-    div.col{
-        height: 100vh;
-    }
-    
-    div.container-fluid{
-        position: relative;
-        
-        .modal-icon{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 3;
-            width: 20%;
-        }
-    }
-    
-    div#inablock-modal-1{
-        background: url(../Imgs/modales/Inablock1.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: right center;
-    }
-    div#inablock-modal-2{
-        background: url(../Imgs/modales/Inablock2.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: left center;
-    }
-}
+
 
 
 // Projects

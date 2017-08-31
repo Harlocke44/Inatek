@@ -57,20 +57,20 @@
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="index.html">
+    <a class="navbar-brand" href="index.php">
         <img src="gph/InatekLogo-01.svg" class="hidden-sm-down" alt="inatek-logo" height="65">
         <img src="gph/inatek-isotipo.png" class="hidden-md-up" alt="inatek-logo" height="40">
     </a>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="index.html">Inicio</a>
+                <a class="nav-link" href="inatek.html">Inicio</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="tecnologia-inatek.html">Tecnologías</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Servicios <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="servicios-inatek.html">Servicios <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Productos</a>
@@ -141,9 +141,7 @@
             <div class="col-10 offset-1 col-md-3 offset-md-0">
                 <img src="gph/Icons-01.svg" alt="inablock-inatek" class="img-fluid wow fadeInUp hvr-grow" id="inablock-button">
             </div>
-            <div class="inablock-modal metromodaldiv">
-                <iframe src="inablock-modal.html" frameborder="0"></iframe>
-            </div>
+            <img src="Imgs/modales/inablock-popup.jpg" alt="" class="inablock-modal metromodaldiv">
             
             <div class="col-md-1"></div>
             
@@ -296,15 +294,29 @@
     
 /* ** Modals 
 *****************************************************/
+var anchoPx;
+var alturaPx;
+var altura;
+var ancho;
     
 /* Inaquin */
 $("#inaquin-button").on("click",function(){
+    altura = $(window).height();
+    ancho = $(window).width();
+    if (altura > ancho){
+        anchoPx = (ancho + 'px');
+        alturaPx = anchoPx;
+    } else {
+        alturaPx = (altura + 'px');
+        anchoPx = alturaPx;
+    }
+    
 	$(".inaquin-modal").MetroModal({
         backscreencolor: "#000000",
         backcolor: "#FFFFFF",
-        width: "60%",
+        width: anchoPx,
         controls: false,
-        height: "60%",
+        height: alturaPx,
         backscreen: true,
         backscreenopacity: 0.3,
         animation: "fadeIn"
@@ -312,13 +324,23 @@ $("#inaquin-button").on("click",function(){
 }); 
 
 /* Inablock */
-$("#inablock-button").on("click",function(){
+$("#inablock-button").on("click",function(){  
+    altura = $(window).height();
+    ancho = $(window).width();
+    if (altura > ancho){
+        anchoPx = (ancho + 'px');
+        alturaPx = anchoPx;
+    } else {
+        alturaPx = (altura + 'px');
+        anchoPx = alturaPx;
+    }
+    
 	$(".inablock-modal").MetroModal({
         backscreencolor: "#000000",
         backcolor: "#FFFFFF",
-        width: "60%",
         controls: false,
-        height: "60%",
+        height: alturaPx,
+        width: anchoPx,
         backscreen: true,
         backscreenopacity: 0.3,
         animation: "fadeIn"
@@ -327,12 +349,22 @@ $("#inablock-button").on("click",function(){
 
 /* Tecnobaldosa */
 $("#tecnobaldosa-button").on("click",function(){
+    altura = $(window).height();
+    ancho = $(window).width();
+    if (altura > ancho){
+        anchoPx = (ancho + 'px');
+        alturaPx = anchoPx;
+    } else {
+        alturaPx = (altura + 'px');
+        anchoPx = alturaPx;
+    }
+    
 	$(".tecnobaldosa-modal").MetroModal({
         backscreencolor: "#000000",
         backcolor: "#FFFFFF",
-        width: "60%",
+        width: anchoPx,
         controls: false,
-        height: "60%",
+        height: alturaPx,
         backscreen: true,
         backscreenopacity: 0.3,
         animation: "fadeIn"
@@ -341,12 +373,22 @@ $("#tecnobaldosa-button").on("click",function(){
 
 /* Inasfalto */
 $("#inasfalto-button").on("click",function(){
+    altura = $(window).height();
+    ancho = $(window).width();
+    if (altura > ancho){
+        anchoPx = (ancho + 'px');
+        alturaPx = anchoPx;
+    } else {
+        alturaPx = (altura + 'px');
+        anchoPx = alturaPx;
+    }
+    
 	$(".inasfalto-modal").MetroModal({
         backscreencolor: "#000000",
         backcolor: "#FFFFFF",
-        width: "60%",
+        width: anchoPx,
         controls: false,
-        height: "60%",
+        height: alturaPx,
         backscreen: true,
         backscreenopacity: 0.3,
         animation: "fadeIn"
@@ -355,12 +397,22 @@ $("#inasfalto-button").on("click",function(){
     
 /* Inacreto */
 $("#inacreto-button").on("click",function(){
+    altura = $(window).height();
+    ancho = $(window).width();
+    if (altura > ancho){
+        anchoPx = (ancho + 'px');
+        alturaPx = anchoPx;
+    } else {
+        alturaPx = (altura + 'px');
+        anchoPx = alturaPx;
+    }
+    
 	$(".inacreto-modal").MetroModal({
         backscreencolor: "#000000",
         backcolor: "#FFFFFF",
-        width: "60%",
+        width: anchoPx,
         controls: false,
-        height: "60%",
+        height: alturaPx,
         backscreen: true,
         backscreenopacity: 0.3,
         animation: "fadeIn"
